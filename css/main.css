@@ -2036,18 +2036,7 @@ body.menu-is-open {
 }
 
 .s-home::after {
-  display: block;
-  content: "";
-  width: 50%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  opacity: .5;
-  z-index: 3;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  bottom: 0;
-  right: 0;
+  display: none;
 }
 
 .s-home .grid-overlay > div {
@@ -2069,6 +2058,8 @@ body.menu-is-open {
   overflow: hidden;
   position: relative;
   z-index: 4;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .home-content h1 {
@@ -2080,6 +2071,7 @@ body.menu-is-open {
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 0;
+  word-wrap: break-word;
 }
 
 .home-content h3 {
@@ -2596,10 +2588,13 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:600px) {
   .home-content {
     padding-top: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .home-content h1 {
     font-size: 9rem;
+    word-wrap: break-word;
   }
 
   .home-content h3 {
@@ -2634,6 +2629,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:500px) {
   .home-content h1 {
     font-size: 7.5rem;
+    word-wrap: break-word;
   }
 
   .home-content h3 {
@@ -2649,6 +2645,7 @@ html.no-csstransitions .home-content__main {
 
   .home-content h1 {
     font-size: 6.5rem;
+    word-wrap: break-word;
   }
 
   .home-content__main {
@@ -2678,6 +2675,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:350px) {
   .home-content h1 {
     font-size: 6.2rem;
+    word-wrap: break-word;
   }
 
 }
@@ -2823,6 +2821,22 @@ html.no-csstransitions .home-content__main {
   padding-bottom: 18rem;
   background-color: #000000;
   position: relative;
+}
+
+.s-services::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 50%;
+  width: 50%;
+  height: 100%;
+  opacity: .3;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url(../images/pattern.jpg);
+  background-size: 760px 380px;
 }
 
 /* ------------------------------------------------------------------- 
