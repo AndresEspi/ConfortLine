@@ -1607,18 +1607,30 @@ body.menu-is-open {
  * ## header logo
  * ------------------------------------------------------------------- */
 .header-logo {
-  z-index: 501;
+  z-index: 505;
   display: inline-block;
   margin: 0;
   padding: 0;
   position: absolute;
-  left: 7.5rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 50%;
+  top: 40vh;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-logo {
+    top: 38vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-logo {
+    top: 35vh;
+  }
 }
 
 .header-logo a {
@@ -1626,11 +1638,13 @@ body.menu-is-open {
   padding: 0;
   outline: 0;
   border: none;
+  text-align: center;
 }
 
 .header-logo img {
-  width: 155px;
-  height: 36px;
+  width: 400px;
+  height: auto;
+  max-width: 100%;
 }
 
 /* ------------------------------------------------------------------- 
