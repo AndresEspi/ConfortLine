@@ -1647,7 +1647,8 @@ body.menu-is-open {
 
 @media screen and (min-width: 776px) {
   .header-logo img {
-    padding-bottom: 550px;
+    padding-bottom: 600px;
+    max-width: 100%;
   }
 }
 

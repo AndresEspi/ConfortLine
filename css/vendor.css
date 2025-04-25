@@ -1566,9 +1566,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   box-sizing: border-box;
 }
 
-.pswp img {
-  max-width: none;
-}
 
 /* style is added when JS option showHideOpacity is set to true */
 .pswp--animate_opacity {
@@ -1705,9 +1702,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   stretched thumbnail or div placeholder element (see below)
   style is added to avoid flickering in webkit/blink when layers overlap
 */
-.pswp__img--placeholder {
-  -webkit-backface-visibility: hidden;
-}
+
 
 /*
   div element that matches size of large image

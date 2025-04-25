@@ -157,7 +157,11 @@
                 e.preventDefault();
                 var options = {
                     index: i,
-                    showHideOpacity: true
+                    showHideOpacity: true,
+                    scaleMode: 'fit',
+                    getDoubleTapZoom: function(isMouseClick, item) {
+                        return item.initialZoomLevel;
+                    }
                 }
 
                 // initialize PhotoSwipe
